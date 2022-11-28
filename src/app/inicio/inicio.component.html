@@ -1,0 +1,17 @@
+<div class="wrapper" #fondo [ngClass]="{ fondo2: color, fondo1: !color }">
+  <div class="circulo giro" (click)="cambioColor()">
+    <button class="btn-est" href="#">+</button>
+  </div>
+  <div class="one">
+    <h1>Alejandro Pascual Sánchez</h1>
+    <h2>Front-End Developer</h2>
+    <button class="boton" routerLink="/informacion">Mas Información</button>
+  </div>
+  <div class="two">
+    <img [src]="ImagePath" (contextmenu)="mensaje()" />
+  </div>
+  <div class="three">
+    <p>Todos los derechos reservados &copy;</p>
+  </div>
+</div>
+<router-outlet></router-outlet>
